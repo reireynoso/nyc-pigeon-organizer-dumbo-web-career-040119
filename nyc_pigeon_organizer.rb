@@ -25,7 +25,7 @@ def nyc_pigeon_organizer(data)
         if category == categ
           #puts "#{name}#{category}"
           more_data.each do |key,value|
-            puts name
+            puts value
           end
         end
       end
