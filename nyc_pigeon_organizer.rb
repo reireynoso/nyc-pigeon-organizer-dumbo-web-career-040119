@@ -2,6 +2,7 @@ def nyc_pigeon_organizer(data)
   # write your code here!
   #puts data
   pigeon_list = {}
+  
   data.each do |category,more_data|
     if category == :gender
       more_data.each do |sex,names|
@@ -11,5 +12,11 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
-  puts pigeon_list
+  
+  pigeon_list.each do |name,hash|
+    data.each do |category,more_data|
+      puts more_data
+    end
+  end
+  #puts pigeon_list
 end
