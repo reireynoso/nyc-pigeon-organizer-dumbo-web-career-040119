@@ -22,13 +22,15 @@ def nyc_pigeon_organizer(data)
   pigeon_list.each do |name,hash|
     hash.each do |categ,array|
       data.each do |category,more_data|
-       more_data.each do |key, value|
-         value.each do |array1|
-           if array1 == name
-             puts "hello"
-           end
-         end
-       end
+        if category == categ
+          more_data.each do |key,value|
+            value.each do |array1|
+              if array1 == name
+                array << key
+              end
+            end
+          end
+        end
       end
     end
   end
