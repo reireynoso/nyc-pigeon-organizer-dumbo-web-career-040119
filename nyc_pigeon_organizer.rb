@@ -21,8 +21,7 @@ def nyc_pigeon_organizer(data)
   
   pigeon_list.each do |name,hash|
     hash.each do |categ,array|
-      puts categ
-      puts array
+      puts "#{categ}#{array}"
       data.each do |category,more_data|
         if category == categ
           #puts "#{name}#{category}"
