@@ -23,7 +23,9 @@ def nyc_pigeon_organizer(data)
     hash.each do |categ,array|
       data.each do |category,more_data|
        more_data.each do |key, value|
-         puts key
+         value.each do |array1|
+           puts array1
+         end
        end
       end
     end
