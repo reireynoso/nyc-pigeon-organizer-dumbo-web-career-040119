@@ -28,7 +28,7 @@ def nyc_pigeon_organizer(data)
           more_data.each do |key,value|
             puts key
             if name == value
-              array << key
+              array << key.to_s
             end
           end
         end
