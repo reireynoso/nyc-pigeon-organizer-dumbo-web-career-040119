@@ -24,7 +24,7 @@ def nyc_pigeon_organizer(data)
       data.each do |category,more_data|
         if category == categ
           more_data.each do |key,value|
-            puts value
+            puts key
           end
         end
       end
