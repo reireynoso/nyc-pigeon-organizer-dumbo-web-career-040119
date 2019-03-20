@@ -25,7 +25,7 @@ def nyc_pigeon_organizer(data)
         more_data.each do |key,value|
           #puts "#{key}#{value}"
            if key.to_sym == categ
-             puts hello
+             puts "hello"
            end
         end
       end
