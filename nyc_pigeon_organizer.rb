@@ -15,7 +15,7 @@ def nyc_pigeon_organizer(data)
   
   pigeon_list.each do |name,hash|
     data.each do |category,more_data|
-      hash = category 
+      hash[category] = more_data
     end
   end
   puts pigeon_list
