@@ -23,7 +23,7 @@ def nyc_pigeon_organizer(data)
     hash.each do |categ,array|
       data.each do |category,more_data|
         more_data.each do |key,value|
-          if key == categ
+          if key.to_s == categ
             puts "hello"
           end
           #puts "#{key}#{value}"
@@ -31,5 +31,5 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
-  puts pigeon_list
+  #puts pigeon_list
 end
